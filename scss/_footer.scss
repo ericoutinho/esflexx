@@ -1,0 +1,25 @@
+footer {
+    font-size: .85rem;
+    background-color: $cor-principal;
+    color: #fff;
+    padding-block: .5rem 1rem;
+    text-align: start;
+
+    .wraper {
+        align-items: center;
+    }
+
+    img {
+        width: 110px;
+        margin-inline: auto 0;
+
+        @include mobile {
+            margin-inline: auto;
+        }
+    }
+
+    @include mobile {
+        text-align: center;
+    }
+    
+}

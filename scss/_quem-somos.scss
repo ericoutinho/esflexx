@@ -1,0 +1,40 @@
+#quem-somos {
+    background-color: $cor-principal;
+    background-image: url(../assets/flexx-background-blue.webp);
+    background-size: cover;
+    clip-path: polygon(0 0, 42.5% 0, 45% 30px, 55% 30px, 57.5% 0, 100% 0, 100% calc(100% - 30px), 70% calc(100% - 30px), 67% 100%, 0% 100%);
+    color: #fff;
+
+    @include mobile {
+        clip-path: polygon(0 0, 32.5% 0, 35% 20px, 65% 20px, 67.5% 0, 100% 0, 100% calc(100% - 20px), 50% calc(100% - 20px), 47% 100%, 0% 100%);
+    }
+
+    .wraper {
+        gap: 2rem;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color: $cor-secundaria;
+        z-index: -1;
+    }
+
+    img {
+        mix-blend-mode: screen;
+        width: 95%;
+        margin-inline: auto;
+
+        @include mobile {
+            width: Min(90%, 350px);
+        }
+    }
+
+    .texto {
+        @include mobile {
+            order: -1;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+#publico {
+
+    .wraper {
+        align-items: center;
+        gap: 2rem;
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color: $cor-secundaria;
+        z-index: -1;
+    }
+
+    img {
+        margin-inline: auto;
+        width: Min(80%, 350px);
+        mix-blend-mode: multiply;
+    }
+
+    .botao {
+        @include mobile {
+            margin-inline: auto;
+        }
+    }
+
+}

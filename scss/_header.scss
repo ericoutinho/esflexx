@@ -1,0 +1,73 @@
+header {
+    padding-block: .25rem;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__brand {
+        width: 175px;
+        height: auto;
+    }
+
+    &__toggle {
+        display: none;
+        background-color: $cor-background;
+        border: 1px solid $cor-principal;
+        border-radius: 4px;
+        padding: .25rem .5rem;
+        color: $cor-principal;
+        font-size: 1.25rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($cor-background, 3);
+        }
+
+        @include mobile {
+            display: block;
+        }
+
+
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+        i {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-weight: 500;
+            transition: all .2s;
+
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+
+            &:is(:hover, :active) {
+                color: $cor-secundaria;
+            }
+
+        }
+
+        @include mobile {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            text-transform: uppercase;
+            padding-block: 2rem;
+
+            &.js-active {
+               display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+#contato {
+    background-color: $cor-secundaria;
+    background: url(../assets/flexx-background-green.webp);
+    background-size: cover;
+    clip-path: polygon(0 30px, 67% 30px, 70% 0, 100% 0, 100% 100%, 0 100% );
+
+    @include mobile {
+        clip-path: polygon(0 20px, 47% 20px, 50% 0, 100% 0, 100% 100%, 0 100% );
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color: #fff;
+        z-index: -1;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 1.25rem;
+    }
+
+    i {
+        vertical-align: middle;
+    }
+
+    .wraper {
+        gap: 2rem;
+        align-items: center;
+
+        @include mobile {
+            align-items: stretch;
+        }
+    }
+
+    img {
+        margin-inline: auto;
+        width: Min(50%, 350px);
+    }
+
+    a {
+        transition: all .2s;
+
+        &:hover, &:active {
+            color: $cor-principal;
+        }
+    }
+
+    .link-whatsapp {
+        i {
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+    }
+
+    .link-email {
+        font-weight: 600;
+        i {
+            font-size: 1.7rem;
+        }
+    }
+
+}

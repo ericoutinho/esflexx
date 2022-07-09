@@ -1,0 +1,107 @@
+#parceiros {
+
+    .wraper {
+        align-items: center;
+        gap: 2.5rem;
+        margin-block: 2rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color: $cor-principal;
+        z-index: -1;
+    }
+
+    .unionsolutions .image {
+        @include mobile {
+            order: -1;
+        }
+    }
+
+    .destaque {
+        padding-block: 1rem;
+        padding-inline: 4rem 1rem;
+        background-color: lighten($cor-background, .7);
+        border-radius: 6px;
+        position: relative;
+
+        &::before {
+            content: '\f06a';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 50%; left: 1rem;
+            font-size: 2rem;
+            transform: translateY(-50%);
+            color: $cor-secundaria;
+        }
+    }
+    
+
+    .union-image-grid {
+        display: grid;
+        margin-inline: auto;
+        gap: .75rem;
+        width: Min(100%, 375px);
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "A A A"
+                             "B C D";
+        
+        img {
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        &-a {
+            grid-area: A;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &-b {
+            grid-area: B;
+        }
+        &-c {
+            grid-area: C;
+        }
+        &-d {
+            grid-area: D;
+        }
+    }
+
+    .superbid-image-grid {
+        display: grid;
+        gap: .75rem;
+        margin-inline: auto;
+        width: Min(100%, 375px);
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "E E E"
+                             "F G H";
+        
+        img {
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        &-a {
+            grid-area: E;
+            width: 85%;
+            margin: 0 auto;
+        }
+        &-b {
+            grid-area: F;
+        }
+        &-c {
+            grid-area: G;
+        }
+        &-d {
+            grid-area: H;
+        }
+    }
+}

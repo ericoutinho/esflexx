@@ -1,0 +1,48 @@
+#hero {
+    padding-block: 0 3.5rem;
+    position: relative;
+
+    h2 {
+        text-align: center;
+        line-height: 1.10;
+        font-weight: 800;
+        font-size: clamp(1.8rem, 3vw ,2.2rem);
+        color: #fff;
+        text-shadow: 0 7px 5px rgba($cor-principal, 0.5);
+
+        br {
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    figure {
+        margin-top: 2rem;
+        margin-inline: auto;
+        width: 92.5%;
+    }
+
+    .piso {
+        position: absolute;
+        left: 0;
+        bottom: top;
+        width: 100%;
+        height: 57%;
+        background: linear-gradient(to bottom, $cor-principal, transparent), url(../assets/hero-background.webp), $cor-secundaria;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-blend-mode: normal, multiply, normal;
+
+        @include mobile {
+            height: 70%;
+        }
+    }
+}
