@@ -21,7 +21,9 @@
     <header>
         <div class="container">
             <nav class="menu">
-                <img src="<?=get_template_directory_uri()?>/assets/ESFlexx-logomarca.svg" data-animation="fromleft" loading="lazy" alt="Logomarca da ESFlexx" class="menu__brand to-reveal">
+                <a href="#hero">
+                    <img src="<?=get_template_directory_uri()?>/assets/ESFlexx-logomarca.svg" data-animation="fromleft" loading="lazy" alt="Logomarca da ESFlexx" class="menu__brand to-reveal">
+                </a>
                 <button class="menu__toggle"><i class="fas fa-bars"></i></button>
                 <ul class="menu__links">
                     <li><a href="#quem-somos">Quem somos</a></li>
@@ -30,8 +32,8 @@
                     <li><a href="#parceiros">Parceiros</a></li>
                     <li><a href="#contato">Contato</a></li>
                     <li>
-                        <a target="_blank" href="https://instagram.com/flex_leiloes" rel=”noopener” title="Instagram da ESFlexx"><i class="fab fa-instagram"></i></a>
-                        <a target="_blank" href="https://wa.me/5527999362825" rel=”noopener” title="Whatsapp da ESFlexx"><i class="fab fa-whatsapp"></i></a>
+                        <a target="_blank" href="https://instagram.com/esflex_leiloes" rel=”noopener” title="Instagram da ESFlexx"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://wa.me/5527999117459" rel=”noopener” title="Whatsapp da ESFlexx"><i class="fab fa-whatsapp"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -84,7 +86,7 @@
                         <p>Realizamos leilões em parceria com o <a rel="noopener" target="_blank" class="link" href="https://detran.gov.es" title="Ir para a página do Detran-ES"><strong>Detran-ES</strong></a></p>
                         <p><strong>Fique atento!</strong> Todos os meses são disponibilizados novos lotes repletos de novidades.</p>
                         <p>Para participar, basta cadastrar-se em nossa planatorma e dar o seu lance.</p>
-                        <a rel="noopener" title="Cadastre-se agora" href="#" target="_blank" class="botao botao__principal to-reveal" data-animation="fromleft" data-delay="1s">Cadastre-se agora! <i class="fa-solid fa-caret-right"></i></a>
+                        <a rel="noopener" title="Cadastre-se agora!" href="https://www.superbid.net/" target="_blank" class="botao botao__principal to-reveal" data-animation="fromleft" data-delay="1s">Cadastre-se agora! <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -163,14 +165,14 @@
                         <ul>
                             <li>
                                 <strong>Dúvidas?</strong> Fale com a gente agora:<br/>
-                                <a rel="noopener" class="link-whatsapp" target="_blank" href="https://wa.me/5527999362825" title="Whatsapp da ESFlexx"><i class="fab fa-lg fa-whatsapp"></i> &nbsp;+55 <span>(27) 99936-2825</span></a>
+                                <a rel="noopener" class="link-whatsapp" target="_blank" href="https://wa.me/5527999117459" title="Whatsapp da ESFlexx"><i class="fab fa-lg fa-whatsapp"></i> &nbsp;+55 <span>(27) 99911-7459</span></a>
                             </li>
                             <li>
                                 Ou envie um e-mail para:<br/>
                                 <a rel="noopener" class="link-email" target="_blank" href="mailto:atendimentoflex01@gmail.com" title="Email da ESFlexx"><i class="fas fa-lg fa-envelope"></i> &nbsp;atendimentoflex01@gmail.com</a>
                             </li>
                             <li>
-                                <a rel="noopener" href="https://instagram.com/flex_leiloes/" title="Instagram da ESFlexx"><i class="fab fa-2x fa-instagram"></i> &nbsp;Siga-nos no Instagram!</a>
+                                <a rel="noopener" href="https://instagram.com/esflex_leiloes/" title="Instagram da ESFlexx"><i class="fab fa-2x fa-instagram"></i> &nbsp;Siga-nos no Instagram!</a>
                             </li>
                         </ul>
                         

@@ -48,6 +48,7 @@ $cor-especial: #FF6600;
 html {
     font-size: 100%;
     scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
 
     @include mobile {
         font-size: 90%;
